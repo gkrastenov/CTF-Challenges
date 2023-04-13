@@ -28,6 +28,7 @@ contract AttackContract {
         underlyingToken.transferFrom(address(target), owner, amount);
     }
 }
+
 contract FlashLoanAttack1 is Test {
     Token token;
     Pool pool;
@@ -40,7 +41,6 @@ contract FlashLoanAttack1 is Test {
     function setUp() public {
         deployer = address(111);
         attacker = address(777);
-
 
         vm.startPrank(deployer);
         token = new Token();
