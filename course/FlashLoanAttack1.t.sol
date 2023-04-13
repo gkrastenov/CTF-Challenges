@@ -4,9 +4,6 @@ pragma solidity ^0.8.13;
 import "forge-std/Test.sol";
 import "forge-std/console.sol";
 
-import "../src/flash-loan-attacks-1/Pool.sol";
-import "../src/flash-loan-attacks-1/Token.sol";
-
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 contract AttackContract {
